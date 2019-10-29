@@ -1,0 +1,212 @@
+body{
+    width: 100%;
+    overflow-x: hidden;                         /*sklanja (izmedju ostalog) beli prazan prostor sa desne strane*/
+}
+.logo{
+    float: left;
+    width: 100px; 
+    padding-left: 10%;
+}
+nav a{
+    float: right;
+    text-decoration: none;
+    word-spacing: 2em;
+    width: 100px;
+    height: 50px;
+    font-size:2em;
+    padding:10px;
+    color: #f2a463;
+    cursor: pointer
+}
+video{
+    width:100%;
+    height:50vh;
+    object-fit:fill;
+}
+h1{                                             /*naslovi na home page-u*/
+    text-align:center;
+    color: #f2a463;
+    padding:20px;
+}
+.centar{                                        /*centrirani paragrafi*/
+    text-align: center;
+}
+#glavni{                                         /*'what we offer div*/
+    width: 100%;
+    margin-left: 30%;
+}
+#prvi, #drugi, #treci, #cetvrti{                 /*pod-divovi '#glavnog' diva: .naslov,slike,text i read more dugme*/
+    display: inline-block;
+    width: 10%;
+}
+.naslov{
+    text-align: center;
+    margin-top: 15px;
+}
+hr{                                             /*razlika izmedju hr i hr2 je u duzini linije. hr2 zahvata 60% po sredini strane */
+    border-color:#f2a463;
+    width:"100%";
+}
+.hr2{
+    border-color:#f2a463;
+    margin-left: 20%;
+    margin-right: 20%;
+    width:"100%";
+}
+.drugipasus{                                     /* section sa tekstom o nagradnoj igri i linkom za galeriju */
+    width: 100%;
+    height: 30vh;
+    background-image: url(slike/contest_image.jpg);
+    background-size: 100% 100%;
+    background-repeat:no-repeat;
+    opacity: 0.6;
+    text-align:center;
+}
+input{
+    visibility: hidden;                          /*sakrio default upload button */
+}
+.custom-upload-button{                           /*custom dugme za upload*/
+    cursor: pointer;
+    width: 60px;
+}
+#more, #more2 , #more3, #more4{                  /*delovi teksta u #glavni-om divu, koji ne treba da se vide pre pritiska na READ MORE button*/
+    display: none;
+}
+#trecipasus{                                     /* section sa slikama Venecije,Pariza i Rima sa divovima td1,td2 i td3 */
+    width: 100%;
+    height:500px;
+    margin-left: 20%;
+    color: white;
+}
+#td1{
+    float: left;
+    width: 20%;
+    height: 500px;
+    background-image:url(slike/venice.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+#td2{
+    float: left;
+    width: 20%;
+    height: 500px;
+    background-image: url(slike/Paris.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+#td3{
+    float: left;
+    width: 20%;
+    height: 500px;
+    background-image: url(slike/rome.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.art2, .art {                                       /* paragrafi unutar divova td1,td2 i td3 */
+    padding-top: 35%;
+    font-size: 20px;
+}
+.art{
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+}
+#cetvrtipasus{                                      /*zavrsni deo home page-a sa linkom za blog(#lastone a),tekstom(last one) i slikom(picblog2) */
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 5%;
+    height: 200px;
+}
+#cetvrtipasus::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+#picblog2{
+    float: right;
+    margin: 5px;
+    margin-bottom: 5%;
+}
+#lastone{
+    text-align: left;
+    margin-bottom: 5%;
+}
+#lastone a{
+    text-decoration: none;
+    color: darkslategrey;
+    margin-bottom: 5%;
+    cursor: pointer
+}
+footer{
+    width: 100%;
+    height: 5%;
+    border: 1px solid #f2a463;
+    text-align: center;
+    padding-top: 10px;
+    clear: both;
+    background-color:#f2a463;
+}
+button{                                             /*dugme u galeriji*/
+    background-color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer
+}
+#galhead{                                           /*header stranice galerija.html */
+    padding-bottom: 8%;
+}
+.drugipasus a{                                      /*link na home page-u za stranicuu galerija.html*/
+    text-decoration: none;
+    color: black;
+    border:  1px solid orange;
+    padding: 1px;
+    cursor: pointer
+}
+#slike{                                             /*div sa slikama u galeriji*/
+    margin-top: 5%;
+    margin-bottom: 5%;
+    box-sizing: border-box;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+#slike::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+#slike img{
+    float: left;
+    width: 23%;
+    height: 200px;
+    padding: 5px;
+    object-fit: fill;    
+}
+.ubutt{                                             /*dugme za upload galerija.html*/
+    text-align: right;
+}
+#mapa{
+    width: 100%;
+    height: 400px;
+    margin-top: 3%;
+    margin-bottom: 20px;
+}
+form, #cform{
+    width: 30%;
+    margin-left: 20%;
+    margin-bottom: 2%;
+}
+.show, textarea{                                    /*ovde sam morao da stavim visibility:visible, jer imam 'gore' input-hidden */
+    width: 300px;
+    visibility: visible;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+#blog{
+    width: 900px;
+    height: 900px;
+    background-image: url(slike/snoopy.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 150px auto;
+}
