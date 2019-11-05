@@ -1,22 +1,14 @@
 body{
     width: 100%;
-    overflow-x: hidden;                         /*sklanja (izmedju ostalog) beli prazan prostor sa desne strane*/
+    overflow-x: hidden;                         sklanja (izmedju ostalog) beli prazan prostor sa desne strane
 }
 .logo{
     float: left;
     width: 100px; 
     padding-left: 10%;
 }
-nav a{
-    float: right;
-    text-decoration: none;
-    word-spacing: 2em;
-    width: 100px;
-    height: 50px;
-    font-size:2em;
-    padding:10px;
-    color: #f2a463;
-    cursor: pointer
+.navigacija{
+    width: 100%;
 }
 video{
     width:100%;
@@ -30,6 +22,10 @@ h1{                                             /*naslovi na home page-u*/
 }
 .centar{                                        /*centrirani paragrafi*/
     text-align: center;
+}
+.divovi{
+    margin-left: 20%;
+    margin-right: 20%;
 }
 #glavni{                                         /*'what we offer div*/
     width: 100%;

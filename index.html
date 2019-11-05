@@ -3,56 +3,111 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial scale=1">
-        <title>Home page</title>
+        <script src="node_modules/popper.js/dist/popper.js"></script>
+        <script src="jquery.js"></script>
+        <script src="bootstrap/js/bootstrap.bundle.js"></script>
+        <link href="bootstrap/css/bootstrap.css" rel="stylesheet"/>
         <link href="style.css" rel="stylesheet">
     </head>
     <body>
         <header>
-            <img class="logo" src="slike/logo.jpg">
-            <nav>
-                <a href="galerija.html">Gallery</a>
-                <a href="kontakt.html">Contact</a>
-                <a href="index.html">Home</a>
+            <nav class="navbar nav-tabs navbar-expand-sm navbar-light">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <a class="navbar-brand" href="">
+                        <img src="slike/logo.jpg" alt="logo" style="width:40px;">
+                    </a>
+                    <ul class="navbar-nav justify-content-end navigacija">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="aboutus.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="destinations.html">Destinations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="kontakt.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
-        </header>
-        <section id="prvipasus">
-            <video controls autoplay muted>
-                <source src="video/videooo.mp4" type="video/mp4"/>
-            </video>
-            <h1>WHAT WE OFFER</h1>
-            <p class="centar">Lorem Ipsum is so boring and i suppose to type some text here, but i am too lazy.<br>
-                 So, this is more then enough from me. Skip this text pleaseeee. </p>
-        </section>
-        <div id="glavni">
-            <div id="prvi">
-                <img src="slike/fllight.png" width="80%"> <br>
-                <h3 class="naslov">Amazing travel</h3><br>
-                <p class="centar">Lorem Ipsum is so boring and i suppose to type some<span id="dots">...</span><span id="more"> text here, but i am too lazy.
-                    So, this is more then enough from me. Skip this text pleaseeee.</span></p>
-                    <button onclick="myFunction()" id="myButton">Read more</button>
+            </header>
+            <section id="prvipasus">
+                <video controls autoplay muted>
+                    <source src="video/videooo.mp4" type="video/mp4" />
+                </video>
+                <h1>WHAT WE OFFER</h1>
+                <p class="centar">Lorem Ipsum is so boring and i suppose to type some text here, but i am too lazy.<br>
+                    So, this is more then enough from me. Skip this text pleaseeee. </p>
+            </section>
+            <div id="glavni">
+                <div id="prvi">
+                    <br>
+                    <br>
             </div>
-            <div id="drugi">
-                <img src="slike/globe.png" width="80%"><br>
-                <h3 class="naslov">Discover</h3><br>
-                <p class="centar">Lorem Ipsum is so boring and i suppose to type some<span id="dots2">...</span><span id="more2"> text here, but i am too lazy.
-                    So, this is more then enough from me. Skip this text pleaseeee.</span></p>
-                    <button onclick="myFunction2()" id="myButton2">Read more</button>
+            <div class="row divovi">
+                <div class="col-sm-3">
+                    <img src="slike/fllight.png" width="80%">    
+                </div>
+                <div class="col-sm-3">
+                    <img src="slike/globe.png" width="80%">
+                </div>
+                <div class="col-sm-3">
+                    <img src="slike/flag.png" width="80%">
+                </div>
+                <div class="col-sm-3">
+                    <img src="slike/support.png" width="80%">
+                </div>
             </div>
-            <div id="treci">
-                <img src="slike/flag.png" width="80%"><br>
-                <h3 class="naslov">Book your trip</h3><br>
-                <p class="centar">Lorem Ipsum is so boring and i suppose to type some<span id="dots3">...</span><span id="more3"> text here, but i am too lazy.
-                    So, this is more then enough from me. Skip this text pleaseeee.</span></p>
-                    <button onclick="myFunction3()" id="myButton3">Read more</button>
+            <div class="row divovi">
+                <div class="col-sm-3">
+                    <h3 class="naslov">Amazing travel</h3>
+                </div>
+                <div class="col-sm-3">
+                    <h3 class="naslov">Discover</h3>
+                </div>
+                <div class="col-sm-3">
+                    <h3 class="naslov">Book your trip</h3>
+                </div>
+                <div class="col-sm-3">
+                    <h3 class="naslov">Nice support</h3>
+                </div>
             </div>
-            <div id="cetvrti">
-                <img src="slike/support.png" width="80%"> <br>
-                <h3 class="naslov">Nice support</h3><br>
-                <p class="centar">Lorem Ipsum is so boring and i supose to type some<span id="dots4">...</span><span id="more4"> text here, but i am too lazy.
-                    So, this is more then enough from me. Skip this text pleaseeee.</span></p>
-                    <button onclick="myFunction4()" id="myButton4">Read more</button>
+            <div class="row divovi">
+                    <div class="col-sm-3">
+                            <p class="centar">Lorem Ipsum is so boring and i suppose to type some<span id="dots">...</span><span id="more"> text here, but i am too lazy.
+                                So, this is more then enough from me. Skip this text pleaseeee.</span></p>
+                                <button onclick="myFunction()" id="myButton">Read more</button>
+                    </div>
+                    <div class="col-sm-3">
+                        <p class="centar">Lorem Ipsum is so boring and i suppose to type some<span id="dots2">...</span><span id="more2">
+                                text here, but i am too lazy.
+                                So, this is more then enough from me. Skip this text pleaseeee.</span></p>
+                        <button onclick="myFunction2()" id="myButton2">Read more</button>
+                    </div>
+                    <div class="col-sm-3">
+                        <p class="centar">Lorem Ipsum is so boring and i suppose to type some<span id="dots3">...</span><span id="more3">
+                                text here, but i am too lazy.
+                                So, this is more then enough from me. Skip this text pleaseeee.</span></p>
+                        <button onclick="myFunction3()" id="myButton3">Read more</button>
+                    </div>
+                    <div class="col-sm-3">
+                        <p class="centar">Lorem Ipsum is so boring and i supose to type some<span id="dots4">...</span><span id="more4">
+                                text here, but i am too lazy.
+                                So, this is more then enough from me. Skip this text pleaseeee.</span></p>
+                        <button onclick="myFunction4()" id="myButton4">Read more</button>
+                    </div>
             </div>
-        </div>
         <hr>
         <section class="drugipasus">
             <h2>UPLOAD PHOTO AND<br>WIN A PRIZE</h2>
