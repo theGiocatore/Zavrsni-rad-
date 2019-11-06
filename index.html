@@ -6,6 +6,8 @@
         <script src="node_modules/popper.js/dist/popper.js"></script>
         <script src="jquery.js"></script>
         <script src="bootstrap/js/bootstrap.bundle.js"></script>
+        <script src="jscript/pesacenje.js"></script>
+        <script src="jscript/upload_pic.js"></script>
         <link href="bootstrap/css/bootstrap.css" rel="stylesheet"/>
         <link href="style.css" rel="stylesheet">
     </head>
@@ -17,7 +19,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="collapsibleNavbar">
                     <a class="navbar-brand" href="">
-                        <img src="slike/logo.jpg" alt="logo" style="width:40px;">
+                        <img src="slike/logo.jpg" alt="logo" style="width: 100px;">
                     </a>
                     <ul class="navbar-nav justify-content-end navigacija">
                         <li class="nav-item active">
@@ -41,120 +43,125 @@
                     </ul>
                 </div>
             </nav>
-            </header>
-            <section id="prvipasus">
-                <video controls autoplay muted>
-                    <source src="video/videooo.mp4" type="video/mp4" />
-                </video>
-                <h1>WHAT WE OFFER</h1>
-                <p class="centar">Lorem Ipsum is so boring and i suppose to type some text here, but i am too lazy.<br>
-                    So, this is more then enough from me. Skip this text pleaseeee. </p>
-            </section>
-            <div id="glavni">
-                <div id="prvi">
-                    <br>
-                    <br>
-            </div>
+        </header>
+        <section>
+            <video controls autoplay muted>
+                <source src="video/videooo.mp4" type="video/mp4" />
+            </video>
+            <h1>WHAT WE OFFER</h1>
+            <p class="tekstic">Lorem Ipsum is so boring and i suppose to type some text here, but i am too lazy.<br>
+                    So, this is more then enough from me. Skip this text pleaseeee.
+            </p>
             <div class="row divovi">
-                <div class="col-sm-3">
-                    <img src="slike/fllight.png" width="80%">    
+                <div class="col-md-3">
+                    <img src="slike/fllight.png" width="60%">    
                 </div>
-                <div class="col-sm-3">
-                    <img src="slike/globe.png" width="80%">
+                <div class="col-md-3">
+                    <img src="slike/globe.png" width="60%">
                 </div>
-                <div class="col-sm-3">
-                    <img src="slike/flag.png" width="80%">
+                <div class="col-md-3">
+                    <img src="slike/flag.png" width="60%">
                 </div>
-                <div class="col-sm-3">
-                    <img src="slike/support.png" width="80%">
+                <div class="col-md-3">
+                    <img src="slike/support.png" width="60%">
                 </div>
             </div>
             <div class="row divovi">
-                <div class="col-sm-3">
-                    <h3 class="naslov">Amazing travel</h3>
+                <div class="col-md-3">
+                    <h3 class="tekstic">Amazing travel</h3>
                 </div>
-                <div class="col-sm-3">
-                    <h3 class="naslov">Discover</h3>
+                <div class="col-md-3">
+                    <h3 class="tekstic">Discover</h3>
                 </div>
-                <div class="col-sm-3">
-                    <h3 class="naslov">Book your trip</h3>
+                <div class="col-md-3">
+                    <h3 class="tekstic">Book your trip</h3>
                 </div>
-                <div class="col-sm-3">
-                    <h3 class="naslov">Nice support</h3>
+                <div class="col-md-3">
+                    <h3 class="tekstic">Nice support</h3>
                 </div>
             </div>
             <div class="row divovi">
-                    <div class="col-sm-3">
-                            <p class="centar">Lorem Ipsum is so boring and i suppose to type some<span id="dots">...</span><span id="more"> text here, but i am too lazy.
+                    <div class="col-md-3">
+                        <p class="centar">Lorem Ipsum is so boring and i suppose to type some<span id="dots">...</span><span id="more">
+                                text here, but i am too lazy.
                                 So, this is more then enough from me. Skip this text pleaseeee.</span></p>
-                                <button onclick="myFunction()" id="myButton">Read more</button>
+                        <button onclick="myFunction()" id="myButton">Read more</button>
                     </div>
-                    <div class="col-sm-3">
-                        <p class="centar">Lorem Ipsum is so boring and i suppose to type some<span id="dots2">...</span><span id="more2">
+                    <div class="col-md-3">
+                        <p>Lorem Ipsum is so boring and i suppose to type some<span id="dots2">...</span><span id="more2">
                                 text here, but i am too lazy.
                                 So, this is more then enough from me. Skip this text pleaseeee.</span></p>
                         <button onclick="myFunction2()" id="myButton2">Read more</button>
                     </div>
-                    <div class="col-sm-3">
-                        <p class="centar">Lorem Ipsum is so boring and i suppose to type some<span id="dots3">...</span><span id="more3">
+                    <div class="col-md-3">
+                        <p>Lorem Ipsum is so boring and i suppose to type some<span id="dots3">...</span><span id="more3">
                                 text here, but i am too lazy.
                                 So, this is more then enough from me. Skip this text pleaseeee.</span></p>
                         <button onclick="myFunction3()" id="myButton3">Read more</button>
                     </div>
-                    <div class="col-sm-3">
-                        <p class="centar">Lorem Ipsum is so boring and i supose to type some<span id="dots4">...</span><span id="more4">
+                    <div class="col-md-3">
+                        <p>Lorem Ipsum is so boring and i supose to type some<span id="dots4">...</span><span id="more4">
                                 text here, but i am too lazy.
                                 So, this is more then enough from me. Skip this text pleaseeee.</span></p>
                         <button onclick="myFunction4()" id="myButton4">Read more</button>
                     </div>
             </div>
-        <hr>
-        <section class="drugipasus">
-            <h2>UPLOAD PHOTO AND<br>WIN A PRIZE</h2>
-            <p class="centar">Upload Your photo from<br>most interesting<br>
-            destinations and get a<br>chance to win a prize.<br>
-            <a href="galerija.html">Details</a>
-            </p>
         </section>
-        <h1>TOP DESTINATIONS</h1><br>
-        <section id="trecipasus">
-            <article>
-                <div id="td1">
-                    <p class="art">Venice
-                    </p>
-                    <p class="art2">Lorem Ipsum is so boring and i suppose to type some text here, but i am too lazy.
-                    So, this is more then enough from me. Skip this text pleaseeee.
+        <hr>
+        <section>
+            <div class="container-fluid tekstic drugideo">
+                <div>
+                    <h2>UPLOAD PHOTO AND<br>WIN A PRIZE</h2>
+                </div>
+                <div>
+                    <p>Upload Your photo from<br>most interesting<br>
+                        destinations and get a<br>chance to win a prize.<br>
+                        <a href="galerija.html">Details</a>
                     </p>
                 </div>
-                <div id="td2">
-                    <p class="art">Paris
+            </div>
+            <h1>TOP DESTINATIONS</h1><br>
+            <div class="row text-light tekstic divovi">
+                <div class="col-md-4 venecija">
+                    <p>Venice
                     </p>
-                    <p class="art2">Lorem Ipsum is so boring and i suppose to type some text here, but i am too lazy.
-                    So, this is more then enough from me. Skip this text pleaseeee.
-                    </p>
-                </div>
-                <div id="td3">
-                    <p class="art">Rome</p>
-                    <p class="art2">Lorem Ipsum is so boring and i suppose to type some text here, but i am too lazy.
+                    <p>Lorem Ipsum is so boring and i suppose to type some text here, but i am too lazy.
                         So, this is more then enough from me. Skip this text pleaseeee.
                     </p>
                 </div>
-            </article>
-        </section><br>
+                <div class="col-md-4 pariz">
+                    <p>Paris
+                    </p>
+                    <p>Lorem Ipsum is so boring and i suppose to type some text here, but i am too lazy.
+                        So, this is more then enough from me. Skip this text pleaseeee.
+                    </p>
+                </div>
+                <div class="col-md-4 rim">
+                    <p>Rome      
+                    </p>
+                    <p>Lorem Ipsum is so boring and i suppose to type some text here, but i am too lazy.
+                        So, this is more then enough from me. Skip this text pleaseeee.
+                    </p>
+                </div>
+            </div>
+        </section>
         <hr class="hr2">
-        <section id="cetvrtipasus">
-            <h1>TRAVEL PLANINNG TIPS & ADVICE FOR EVERYONE</h1>
-            <p id="lastone"> <img id="picblog2" src="slike/travel2.jpg" width="200px">You are going on a hollyday or planning to take one, Awesome and exciting news, but now what?
-                There is so much informations out there these days. Between Pinterest, instagram, travel blogs,
-                youtube and review sites like TripAdvisor, travel planning can get overwhelming fast.
-                While having access to milions of pieces of valuable informations is great, sometimes is too much.<br><br>
-                For more informations visit our <a href="blog.html">blog.</a><br>
-            </p>
-         </section><br>
+        <h1 class="divovi">TRAVEL PLANINNG TIPS & ADVICE FOR EVERYONE</h1>
+        <div class="row divovi">
+            <div class="col-md-8">
+                <p> You are going on a hollyday or planning to take one, Awesome and exciting news, but now what?
+                    There is so much informations out there these days. Between Pinterest, instagram, travel blogs,
+                    youtube and review sites like TripAdvisor, travel planning can get overwhelming fast.
+                    While having access to milions of pieces of valuable informations is great, sometimes is too much.<br><br>
+                    For more informations visit our <a href="blog.html">blog.</a><br>
+                </p>
+            </div>
+            <div class="col-md-4">
+                <img src="slike/travel2.jpg" width="200px">
+            </div>
+        </div>
          <footer>
              &copy; SmartInIt 2019 Home Privacy Policy Contact Support
          </footer>
-        <script src="jscript/pesacenje.js"></script>
-        <script src="jscript/upload_pic.js"></script>
     </body>
 </html>
