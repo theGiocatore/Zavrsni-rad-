@@ -40,7 +40,7 @@ hr{                                             /*razlika izmedju hr i hr2 je u 
     opacity: 0.6;
 }
 input{
-    visibility: hidden;                          /*sakrio default upload button */
+    visibility: hidden;                          
 }
 .custom-upload-button{                           /*custom dugme za upload*/
     cursor: pointer;
@@ -85,33 +85,10 @@ button{                                             /*dugme u galeriji*/
     padding: 5px;
     cursor: pointer
 }
-#galhead{                                           /*header stranice galerija.html */
-    padding-bottom: 8%;
-}
-.drugipasus a{                                      /*link na home page-u za stranicuu galerija.html*/
-    text-decoration: none;
-    color: black;
-    border:  1px solid orange;
-    padding: 1px;
-    cursor: pointer
-}
-#slike{                                             /*div sa slikama u galeriji*/
-    margin-top: 5%;
-    margin-bottom: 5%;
-    box-sizing: border-box;
-    width: 60%;
-    margin-left: 20%;
-    margin-right: 20%;
-}
-#slike::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-#slike img{
+.slike img{                                     /* slike u galeriji*/
     float: left;
-    width: 23%;
-    height: 200px;
+    width: 100%;
+    height: 300px;
     padding: 5px;
     object-fit: fill;    
 }
@@ -124,16 +101,12 @@ button{                                             /*dugme u galeriji*/
     margin-top: 3%;
     margin-bottom: 20px;
 }
-form, #cform{
-    width: 30%;
-    margin-left: 20%;
-    margin-bottom: 2%;
-}
 .show, textarea{                                    /*ovde sam morao da stavim visibility:visible, jer imam 'gore' input-hidden */
     width: 300px;
     visibility: visible;
     margin-bottom: 10px;
     padding: 10px;
+    margin-left: 20%;
 }
 #blog{
     width: 900px;

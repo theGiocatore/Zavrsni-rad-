@@ -3,28 +3,68 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial scale=1">
-        <title>Home page</title>
+        <script src="node_modules/popper.js/dist/popper.js"></script>
+        <script src="jquery.js"></script>
+        <script src="bootstrap/js/bootstrap.bundle.js"></script>
+        <script src="jscript/pesacenje.js"></script>
+        <script src="jscript/upload_pic.js"></script>
+        <link href="bootstrap/css/bootstrap.css" rel="stylesheet"/>
+        <title>Contact</title>
         <link href="style.css" rel="stylesheet">
     </head>
     <body>
         <header>
-            <img class="logo" src="slike/logo.jpg">
-            <nav>
-                <a href="galerija.html">Gallery</a>
-                <a href="kontakt.html">Contact</a>
-                <a href="index.html">Home</a>
+            <nav class="navbar nav-tabs navbar-expand-sm navbar-light">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <a class="navbar-brand" href="">
+                        <img src="slike/logo.jpg" alt="logo" style="width: 100px;">
+                    </a>
+                    <ul class="navbar-nav justify-content-end navigacija">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="aboutus.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="destinations.html">Destinations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="galerija.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="kontakt.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
         </header>
-        <iframe id="mapa" width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=20.431051254272464%2C45.82201071805959%2C20.478944778442386%2C45.8401913620995&amp;
-            layer=mapnik" style="border: 1px solid black">
-        </iframe><br>
-        <h2 id="cform">Contact form</h2>
-        <form>
-            <input class="show" type="text" name="Fullname" placeholder="Name">
-            <input class="show" type="email" name="Email" placeholder="E-mail">
-            <textarea rows="10"> </textarea>
-            <input class="show" type="submit" value="Submit">
-        </form><br>
+        <iframe id="mapa" width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
+            src="https://www.openstreetmap.org/export/embed.html?bbox=20.438175201416016%2C45.82069478311472%2C20.48606872558594%2C45.83773971380837&amp;layer=mapnik&amp;marker=45.82921790091622%2C20.462121963500977" style="border: 1px solid black">
+        </iframe>
+        <br/>
+        <div class="container">
+            <form>
+                <h3 class="show">Contact us:</h3>
+                <div class="form-group">
+                    <input type="text" class="form-control show" id="name" placeholder="Name" name="name">
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control show" id="email" placeholder="Email" name="email">
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control show" rows="5" id="comment" placeholder="Wrrite your comment here" name="text"></textarea>
+                </div>
+                <button type="submit" class="btn btn-light show">Submit</button>
+            </form>
+        </div>
+        
         <hr class="hr2">
         <footer>
             &copy; SmartInIt 2019 Home Privacy Policy Contact Support

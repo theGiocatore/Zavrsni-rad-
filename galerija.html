@@ -1,50 +1,113 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial scale=1">
-        <meta charset="utf-8">
-        <title>Gallery</title>
-        <link href="style.css" rel="stylesheet">
-    </head>
-    <body>
-        <header id="galhead">
-            <img class="logo" src="slike/logo.jpg">
-            <nav>
-                <a href="galerija.html">Gallery</a>
-                <a href="kontakt.html">Contact</a>
-                <a href="index.html">Home</a>
-            </nav>
-        </header>
-        <br>
-        <div>
-        <hr>
-        <section class="drugipasus">
-                <h2>UPLOAD PHOTO AND<br>WIN A PRIZE</h2>
-                <p>Upload Your photo from<br>most interesting<br>
-                destinations and get a<br>chance to win a prize.<br>You can win Travel for two persons<br> and many other gifts.<br>
-                </p>
-        </section>
+<head>
+    <meta name="viewport" content="width=device-width, initial scale=1">
+    <meta charset="utf-8">
+    <title>Gallery</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="node_modules/popper.js/dist/popper.js"></script>
+    <script src="jquery.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="jscript/upload_pic.js"></script>
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <nav class="navbar nav-tabs navbar-expand-sm navbar-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <a class="navbar-brand" href="">
+                    <img src="slike/logo.jpg" alt="logo" style="width: 100px;">
+                </a>
+                <ul class="navbar-nav justify-content-end navigacija">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="destinations.html">Destinations</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="galerija.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="kontakt.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <br>
+    <hr>
+    <div class="container-fluid tekstic drugideo">
+        <h2>UPLOAD PHOTO AND<br>WIN A PRIZE</h2>
+        <p>Upload Your photo from<br>most interesting<br>
+            destinations and get a<br>chance to win a prize.<br>You can win Travel for two persons<br> and many other
+            gifts.<br>
+        </p>
+    </div>
+    </div>
+    <div class="container">
+        <div class="row divovi">
+            <div class="col-md-3 slike">
+                <img src="slike/athen.jpg" alt="Slika Atine" title="Athen,Greece">
+            </div>
+            <div class="col-md-3 slike">
+                <img src="slike/dubrovnik.jpg" alt="Slika Dubrovnika" title="Dubrovnik Croatia">
+            </div>
+            <div class="col-md-3 slike">
+                <img src="slike/greece.jpg" alt="Slika Santorinija" title="Santorini,Greece">
+            </div>
+            <div class="col-md-3 slike">
+                <img src="slike/havana.jpg" alt="Slika Havane" title="Havana,Cuba">
+            </div>
         </div>
-        <div id="slike">
-            <img src="slike/athen.jpg" alt="Slika Atine" title="Athen,Greece">
-            <img src="slike/dubrovnik.jpg" alt="Slika Dubrovnika" title="Dubrovnik Croatia">
-            <img src="slike/greece.jpg" alt="Slika Santorinija" title="Santorini,Greece">
-            <img src="slike/havana.jpg" alt="Slika Havane" title="Havana,Cuba">
-            <img src="slike/london.jpeg" alt="Slika Londona" title="London, UK">
-            <img src="slike/paris.jpg" alt="Slika Pariza" title="Paris,France">
-            <img src="slike/quiske.jpg" alt="Bungalov " title="Bora bora">
-            <img src="slike/rio.jpg" alt="Slika Ria" title="Rio,Brasil">
-            <img src="slike/rome.jpg" alt="Slika Rima" title="Rome,Italy">
-            <img src="slike/taj_mahal.jpg" alt="Slika Tadz Mahala" title="Taj Mahal, India">
-            <img src="slike/thailand.jpg" alt="Slika plaze" title="Beach,Thailand">
-            <img src="slike/venice.jpg" alt="Slika Venecije" title="Venice,Italy">
-        </div><br>
-        <div class="ubutt">
-        <label for="File1"> <img src="slike/upload_photo.png"  class="custom-upload-button"> </label>
+    </div>
+    <div class="container">
+        <div class="row divovi">
+            <div class="col-md-3 slike">
+                <img src="slike/london.jpeg" alt="Slika Londona" title="London, UK">
+            </div>
+            <div class="col-md-3 slike" >
+                <img src="slike/paris.jpg" alt="Slika Pariza" title="Paris,France">
+            </div>
+            <div class="col-md-3 slike">
+                <img src="slike/quiske.jpg" alt="Bungalov " title="Bora bora">
+            </div>
+            <div class="col-md-3 slike">
+                <img src="slike/rio.jpg" alt="Slika Ria" title="Rio,Brasil">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row divovi">
+            <div class="col-md-3 slike">
+                <img src="slike/rome.jpg" alt="Slika Rima" title="Rome,Italy">
+            </div>
+            <div class="col-md-3 slike">
+                <img src="slike/taj_mahal.jpg" alt="Slika Tadz Mahala" title="Taj Mahal, India">
+            </div>
+            <div class="col-md-3 slike">
+                <img src="slike/thailand.jpg" alt="Slika plaze" title="Beach,Thailand">
+            </div>
+            <div class="col-md-3 slike">
+                <img src="slike/venice.jpg" alt="Slika Venecije" title="Venice,Italy">
+            </div>
+        </div>
+    </div>
+    <div class="ubutt">
+        <label for="File1"> <img src="slike/upload_photo.png" class="custom-upload-button"> </label>
         <input type="file" id="File1" onchange="ucitajSliku()" accept="image/*" />
-        </div>
-        <footer>
-            &copy; SmartInIt 2019 Home Privacy Policy Contact Support
-        </footer>
-    </body>
+    </div>
+    <footer>
+        &copy; SmartInIt 2019 Home Privacy Policy Contact Support
+    </footer>
+</body>
 </html>
