@@ -1,12 +1,50 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial scale=1">
-        <title>Home page</title>
-        <link href="style.css" rel="stylesheet">
-    </head>
-    <body>
-        <div id="blog"></div>
-    </body>
+<head>
+    <meta charset="utf-8">
+    <script src="node_modules/popper.js/dist/popper.js"></script>
+    <script src="jquery.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="jscript/pesacenje.js"></script>
+    <script src="jscript/upload_pic.js"></script>
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial scale=1">
+    <title>Blog</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar nav-tabs navbar-expand-sm navbar-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <a class="navbar-brand" href="">
+                    <img src="slike/logo.jpg" alt="logo" style="width: 100px;">
+                </a>
+                <ul class="navbar-nav justify-content-end navigacija">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="destinations.html">Destinations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="galerija.html">Gallery</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="kontakt.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div id="blog"></div>
+</body>
 </html>

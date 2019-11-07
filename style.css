@@ -92,6 +92,13 @@ button{                                             /*dugme u galeriji*/
     padding: 5px;
     object-fit: fill;    
 }
+.slike2 img{                                     /* slike u galeriji*/
+    float: left;
+    width: 100%;
+    height: auto;
+    padding: 5px;
+    object-fit: fill;    
+}
 .ubutt{                                             /*dugme za upload galerija.html*/
     text-align: right;
 }
@@ -115,4 +122,18 @@ button{                                             /*dugme u galeriji*/
     background-size: contain;
     background-repeat: no-repeat;
     margin: 150px auto;
+}
+.vline{
+    border: 1px solid #f2a463;
+    height: 100%;
+    float: left;
+    margin-right: 10px;
+}
+.obojenidiv{
+    background-color:#ffdfae;
+}
+ul {
+    list-style-image: url('slike/strelica.png');
+    line-height: 200%;
+    margin-left: 40px;
 }
