@@ -1,9 +1,132 @@
 <!DOCTYPE html>
 <html>
     <head>
-
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial scale=1">
+        <title>Destinations</title>
+        <script src="node_modules/popper.js/dist/popper.js"></script>
+        <script src="jquery.js"></script>
+        <script src="bootstrap/js/bootstrap.bundle.js"></script>
+        <script src="jscript/pesacenje.js"></script>
+        <script src="jscript/upload_pic.js"></script>
+        <link href="bootstrap/css/bootstrap.css" rel="stylesheet"/>
+        <link href="style.css" rel="stylesheet">
     </head>
     <body>
-        
+        <header>
+            <nav class="navbar nav-tabs navbar-expand-sm navbar-light">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <a class="navbar-brand" href="">
+                        <img src="slike/logo.jpg" alt="logo" style="width: 100px;">
+                    </a>
+                    <ul class="navbar-nav justify-content-end navigacija">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="aboutus.html">About Us</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="destinations.html">Destinations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="galerija.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="kontakt.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="container-fluid" style="height: 450px;">
+            <div id="demo" class="carousel slide" data-ride="carousel">
+                <ul class="carousel-indicators">
+                    <li data-target="#demo" data-slide-to="0" class="active"></li>
+                    <li data-target="#demo" data-slide-to="1"></li>
+                    <li data-target="#demo" data-slide-to="2"></li>
+                    <li data-target="#demo" data-slide-to="3"></li>
+                </ul>
+                <div class="carousel-slike">
+                    <div class="carousel-item active">
+                        <img src="slike/athen.jpg" alt="Athen,Greece">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h6>Athen</h6>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="slike/rome.jpg" alt="Rome,Italy" >
+                        <div class="carousel-caption d-none d-md-block">
+                            <h6>Rome</h6>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="slike/quiske.jpg" alt="Quiske" >
+                        <div class="carousel-caption d-none d-md-block">
+                            <h6>Quiske</h6>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="slike/taj_mahal.jpg" alt="Taj Mahal, India">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h6>Taj Mahal</h6>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam</p>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev carouselIcon" href="#demo" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next carouselIcon" href="#demo" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+        </div>
+        <br>
+        <div class="container" style="margin-bottom: 10%;">
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-3 destinacije">
+                    <img src="slike/athen.jpg" alt="Athen"><br>
+                    <h5 class="pl-2 pr-2">Athen</h5><br>
+                    <p class="pl-2 pr-2"><i>Cossy and peaceful</i></p>
+                    <hr class="ml-3 mr-3" style="border-color: rgb(146, 146, 146);">
+                    <p class="pl-2 pr-2">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                        laudantium, totam rem aperiam, eaque ipsa quae ab
+                        illo inventore veritatis et quasi architecto beatae</p>
+                </div><br>
+                <div class="col-md-3 destinacije">
+                    <img src="slike/rome.jpg" alt="Rome"><br>
+                    <h5 class="pl-2 pr-2">Rome</h5><br>
+                    <p class="pl-2 pr-2"><i>All roads lead to Rome</i></p>
+                    <hr class="ml-3 mr-3" style="border-color: rgb(146, 146, 146);">
+                    <p class="pl-2 pr-2">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                        laudantium, totam rem aperiam, eaque ipsa quae ab
+                        illo inventore veritatis et quasi architecto beatae</p>
+                </div><br>
+                <div class="col-md-3 destinacije">
+                    <img src="slike/quiske.jpg" alt="Quiske"><br>
+                    <h5 class="pl-2 pr-2">Quiske</h5><br>
+                    <p class="pl-2 pr-2"><i>Let the sea make you free</i></p>
+                    <hr class="ml-3 mr-3" style="border-color: rgb(146, 146, 146);">
+                    <p class="pl-2 pr-2">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                        laudantium, totam rem aperiam, eaque ipsa quae ab
+                        illo inventore veritatis et quasi architecto beatae</p>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+        </div>
+        <footer>
+            &copy; SmartInIt 2019 Home Privacy Policy Contact Support
+        </footer>
     </body>
 </html>
