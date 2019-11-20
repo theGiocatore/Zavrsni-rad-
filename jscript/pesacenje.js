@@ -7,12 +7,12 @@ function myFunction() {
         dots.style.display = "inline";
         btnText.innerHTML = "Read more";
         moreText.style.display = "none";
-    } 
+    }
     else {
-        dots.style.display= "none";
+        dots.style.display = "none";
         btnText.innerHTML = "Read less";
         moreText.style.display = "inline";
-}
+    }
 }
 function myFunction2() {
     var dots2 = document.getElementById("dots2");
@@ -23,9 +23,9 @@ function myFunction2() {
         dots2.style.display = "inline";
         btnText2.innerHTML = "Read more";
         moreText2.style.display = "none";
-    } 
+    }
     else {
-        dots2.style.display= "none";
+        dots2.style.display = "none";
         btnText2.innerHTML = "Read less";
         moreText2.style.display = "inline";
     }
@@ -39,9 +39,9 @@ function myFunction3() {
         dots3.style.display = "inline";
         btnText3.innerHTML = "Read more";
         moreText3.style.display = "none";
-    } 
+    }
     else {
-        dots3.style.display= "none";
+        dots3.style.display = "none";
         btnText3.innerHTML = "Read less";
         moreText3.style.display = "inline";
     }
@@ -55,10 +55,10 @@ function myFunction4() {
         dots4.style.display = "inline";
         btnText4.innerHTML = "Read more";
         moreText4.style.display = "none";
-    } 
+    }
     else {
-        dots4.style.display= "none";
+        dots4.style.display = "none";
         btnText4.innerHTML = "Read less";
         moreText4.style.display = "inline";
-}
+    }
 }

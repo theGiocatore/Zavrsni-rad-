@@ -22,7 +22,7 @@ h1{                                             /*naslovi na home page-u*/
     margin-left: 20%;
     margin-right: 20%;
 }
-hr{                                             /*razlika izmedju hr i hr2 je u duzini linije. hr2 zahvata 60% po sredini strane */
+.hr1{                                             /*razlika izmedju hr1 i hr2 je u duzini linije. hr2 zahvata 60% po sredini strane */
     border-color:#f2a463;
     width:"100%";
 }
@@ -132,7 +132,7 @@ button{                                             /*dugme u galeriji*/
 .obojenidiv{
     background-color:#ffdfae;
 }
-ul {
+#lista1 {
     list-style-image: url('slike/strelica.png');
     line-height: 200%;
     margin-left: 40px;
