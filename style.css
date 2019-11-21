@@ -170,3 +170,7 @@ button{                                             /*dugme u galeriji*/
     padding-right: 0px;
     padding-left: 0px;
 }
+.flex-container {
+    display: flex;
+    flex-direction: row;
+}
