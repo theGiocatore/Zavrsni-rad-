@@ -116,21 +116,13 @@ button{                                             /*dugme u galeriji*/
     padding: 10px;
     margin-left: 20%;
 }
-#blog{
-    width: 900px;
-    height: 900px;
-    background-image: url(slike/snoopy.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin: 150px auto;
-}
-.vline{
+.vline{                                     /*linija u "about us" koja deli obojeni div na 2 dela*/
     border: 1px solid #f2a463;
     height: 100%;
     float: left;
     margin-right: 10px;
 }
-.obojenidiv{
+.obojenidiv{                                          /* div u 'about us' tabu, #lista - lista koja se nalazi u ovom divu*/
     background-color:#ffdfae;
 }
 #lista1 {
@@ -138,7 +130,7 @@ button{                                             /*dugme u galeriji*/
     line-height: 200%;
     margin-left: 40px;
 }
-.carousel-slike img {
+.carousel-slike img {                                     /*carausel u 'gallery' tabu i njegova podesavanja*/ 
     width: 100%;
     height: 400px;
     object-fit: fill;
@@ -158,7 +150,7 @@ button{                                             /*dugme u galeriji*/
     position: relative;
     bottom: -380px;
 }
-.destinacije img{
+.destinacije img{               /*slike u 'destination' tabu i podesavanja unutar diva*/
     width: 100%;
     height: auto;
     object-fit: fill;
@@ -171,7 +163,7 @@ button{                                             /*dugme u galeriji*/
     padding-right: 0px;
     padding-left: 0px;
 }
-.hr3{
+.hr3{                               /*isprekirana linija i badge u 'blog'-u  */
     border-top: 1px dotted black;
 }
 .badge{
