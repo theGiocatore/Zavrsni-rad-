@@ -170,7 +170,10 @@ button{                                             /*dugme u galeriji*/
     padding-right: 0px;
     padding-left: 0px;
 }
-.flex-container {
-    display: flex;
-    flex-direction: row;
+.hr3{
+    border-top: 1px dotted black;
+}
+.badge{
+    background-color: #f2a463;
+    border-radius: 50px;
 }
