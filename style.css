@@ -83,7 +83,8 @@ button{                                             /*dugme u galeriji*/
     background-color: white;
     border: none;
     padding: 5px;
-    cursor: pointer
+    cursor: pointer;
+    border-radius: 25px;
 }
 .slike img{                                     /* slike u galeriji*/
     float: left;

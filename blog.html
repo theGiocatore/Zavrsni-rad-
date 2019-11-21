@@ -7,7 +7,7 @@
     <script src="jquery.js"></script>
     <script src="bootstrap/js/bootstrap.bundle.js"></script>
     <script src="jscript/pesacenje.js"></script>
-    <script src="jscript/upload_pic.js"></script>
+    <script src="jscript/funkcije.js"></script>
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Blog</title>
@@ -55,50 +55,54 @@
             <div class="col-md-8">
                 <div class="row border" style="margin: 5px;">
                     <div class="col-md-4">
-                        <img src="slike/explore_serbia.jpg" width="100%" height="180px">
+                        <img src="slike/explore_serbia.jpg" width="100%" height="180px"style="padding-top: 5px;">
                     </div>
                     <div class="col-md-8">
-                        <h6>Explore Serbia: Top destinations to visit</h6>
+                        <h6 class="dest" style="color: #f2a463;">Explore Serbia: Top destinations to visit</h6>
                         <p><i>12.11.2019.</i></p>
                         <p>New or already known destinations in Serbia and the Balkans in a different way.
                             In out tours you can expirience...
                         </p>
+                        <button onclick="otvoriPost()"  class="btn btn-outline-secondary" style="margin-bottom: 3px;">Read more</button>
                     </div>
                 </div>
                 <div class="row border" style="margin: 5px;">
                     <div class="col-md-4">
-                        <img src="slike/travel_trends.jpg" width="100%" height="180px">
+                        <img src="slike/travel_trends.jpg" width="100%" height="180px"style="padding-top: 5px;">
                     </div>
                     <div class="col-md-8">
-                        <h6>Travel trends to watch for 2020</h6>
+                        <h6 class="tTips" style="color: #f2a463;">Travel trends to watch for 2020</h6>
                         <p><i>10.11.2019.</i></p>
                         <p>As we get close to entering a new decade, people are getting more excited.
                             In new year, you can expirience...
                         </p>
+                        <button onclick="otvoriPost()"class="btn btn-outline-secondary" style="margin-bottom: 3px;">Read more</button>
                     </div>
                 </div>
                 <div class="row border" style="margin: 5px;">
                     <div class="col-md-4">
-                        <img src="slike/sress_free_vacation.jpg" width="100%" height="180px">
+                        <img src="slike/sress_free_vacation.jpg" width="100%" height="180px" style="padding-top: 5px;">
                     </div>
                     <div class="col-md-8">
-                        <h6>How to have completely stress free vacation</h6>
+                        <h6 class="tTips" style="color: #f2a463;">How to have completely stress free vacation</h6>
                         <p><i>07.11.2019.</i></p>
                         <p>Hollidays are one of the most exciting times of the year. We book them months
                             in advance...
                         </p>
+                        <button onclick="otvoriPost()"class="btn btn-outline-secondary" style="margin-bottom: 3px;">Read more</button>
                     </div>
                 </div>
                 <div class="row border" style="margin: 5px;">
                     <div class="col-md-4">
-                        <img src="slike/airbnb_vs_hotel.jpg" width="100%" height="180px">
+                        <img src="slike/airbnb_vs_hotel.jpg" width="100%" height="180px" style="padding-top: 5px;">
                     </div>
                     <div class="col-md-8">
-                        <h6>6 reasons to choose a hotel over airbnb</h6>
+                        <h6 class="tTips" style="color: #f2a463;">6 reasons to choose a hotel over airbnb</h6>
                         <p><i>06.11.2019.</i></p>
                         <p>Believe it or not, Airbnb has been around for over 10 years. It was started to allow
                             homeowners to make extra money...
                         </p>
+                        <button onclick="otvoriPost()" class="btn btn-outline-secondary" style="margin-bottom: 3px;">Read more</button>
                     </div>
                 </div>
             </div>
@@ -116,11 +120,11 @@
                 </div>
                 <div>
                     <h4 style="background-color: #f2a463; color: white; padding: 2px;">CATEGORIES</h4>
-                    <h6>Travel Tips <span class="badge">0 </span></h6>
+                    <h6>Travel Tips <span id="prviBadge" class="badge">0 </span></h6>
                     <hr class="hr3">
-                    <h6>Destinations <span class="badge">0 </span></h6>
+                    <h6>Destinations <span id="drugiBadge" class="badge">0 </span></h6>
                     <hr class="hr3">
-                    <h6>Summer Vacation <span class="badge">0 </span></h6>
+                    <h6>Summer Vacation <span id="treciBadge" class="badge">0 </span></h6>
                     <hr class="hr3">
                 </div>
                 <div>
