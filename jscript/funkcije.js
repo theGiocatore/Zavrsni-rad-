@@ -27,4 +27,9 @@ function brojBedzeva(){                                            /* funk. broj
 document.addEventListener("DOMContentLoaded", function() {
     brojBedzeva();
   });
+
+function subscribe(){                                       /*alert posle pritiska na "subscribe" dugme*/
+    var txt = document.getElementById('subs').value;
+    alert("Thank you for subscribing! Our new blog posts will wait for you on: " + txt);
+}
   

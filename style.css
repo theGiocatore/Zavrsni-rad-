@@ -39,7 +39,7 @@ h1{                                             /*naslovi na home page-u*/
     background-repeat:no-repeat;
     opacity: 0.6;
 }
-input{
+#File1{
     visibility: hidden;                          
 }
 .custom-upload-button{                           /*custom dugme za upload*/
@@ -79,7 +79,7 @@ footer{
     clear: both;
     background-color:#f2a463;
 }
-button{                                             /*dugme u galeriji*/
+.dugme{                                             /*dugme u galeriji*/
     background-color: white;
     border: none;
     padding: 5px;
@@ -120,7 +120,7 @@ button{                                             /*dugme u galeriji*/
     border: 1px solid #f2a463;
     height: 100%;
     float: left;
-    margin-right: 10px;
+    margin-right: 50px;
 }
 .obojenidiv{                                          /* div u 'about us' tabu, #lista - lista koja se nalazi u ovom divu*/
     background-color:#ffdfae;
