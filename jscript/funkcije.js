@@ -32,4 +32,20 @@ function subscribe(){                                       /*alert posle pritis
     var txt = document.getElementById('subs').value;
     alert("Thank you for subscribing! Our new blog posts will wait for you on: " + txt);
 }
+$(function(){                               /*dodavanje komentara u blog delu*/
+$("#dugmeKom").on("click", function(){
+    var postTxt = $("#tArea").val();
+    $("#listaKom").append("<li>"+ postTxt + "</li>");
+});
+});
+$(function(){                       /*read more/less dugme*/
+    $(".dugme").on("click", function(){
+      var dugmeId = $(this).attr("id");
+      $('#n' + dugmeId).toggle();
+      $('#s' + dugmeId).toggle();
+      $(this).text(function(i, text){
+            return text === "Read more" ? "Read less" : "Read more";
+        });
+    });
+  });
   
