@@ -174,5 +174,8 @@ footer{
 }
 #listaKom li {
     border: 1px solid black;
-    margin: 5px;
+    margin: 2px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    text-align: justify;
 }

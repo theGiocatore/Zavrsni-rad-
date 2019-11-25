@@ -36,6 +36,7 @@ $(function(){                               /*dodavanje komentara u blog delu*/
 $("#dugmeKom").on("click", function(){
     var postTxt = $("#tArea").val();
     $("#listaKom").append("<li>"+ postTxt + "</li>");
+    $("#tArea").val('');
 });
 });
 $(function(){                       /*read more/less dugme*/
@@ -48,4 +49,17 @@ $(function(){                       /*read more/less dugme*/
         });
     });
   });
-  
+$(function(){                   /*pritiskom na dugme'read more' otvara se post, sa opcijom za komentarisanje*/
+    $("#btnX").on("click", function(){
+        var prvi = $('#zamena1');
+        var drugi = $('#zamena2');
+        prvi.replaceWith(drugi);
+        $('#zamena2').css("display","initial");
+        
+    });
+});
+$(function(){
+    $("#dugmeBack").on("click", function(){
+            window.location.reload();
+        });      
+});
