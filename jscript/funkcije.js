@@ -50,7 +50,7 @@ $(function(){                       /*read more/less dugme*/
     });
   });
 $(function(){                   /*pritiskom na dugme'read more' otvara se post, sa opcijom za komentarisanje*/
-    $("#btnX").on("click", function(){
+    $(".linkOne").on("click", function(){
         var prvi = $('#zamena1');
         var drugi = $('#zamena2');
         prvi.replaceWith(drugi);
@@ -62,4 +62,10 @@ $(function(){
     $("#dugmeBack").on("click", function(){
             window.location.reload();
         });      
+});
+$(function(){
+    $(".slk").on("click",function(){
+       var slicica = $(this).attr("src");
+       window.open(slicica);
+    });
 });
