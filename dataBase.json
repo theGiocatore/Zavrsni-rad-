@@ -1,0 +1,72 @@
+{
+    "destinations": [
+    {
+        "id": "1",
+        "destination": "London",
+        "price": "950",
+        "date":"30.12.2019.",
+        "duration": "7"
+    },
+    {
+        "id": "2",
+        "destination": "New York",
+        "price": "1750",
+        "date":"04.12.2019.",
+        "duration": "10"
+    },
+    {
+        "id": "3",
+        "destination": "Paris",
+        "price": "750",
+        "date":"30.11.2019.",
+        "duration": "7"
+    },
+    {
+        "id": "4",
+        "destination": "Rome",
+        "price": "800",
+        "date":"29.11.2019.",
+        "duration": "5"
+    },
+    {
+        "id": "5",
+        "destination": "Thailand",
+        "price": "1550",
+        "date":"15.12.2019.",
+        "duration": "15"
+    },
+    {
+        "id": "6",
+        "destination": "Venice",
+        "price": "550",
+        "date":"29.11.2019.",
+        "duration": "5"
+    }
+],
+"reservations":[
+    {
+        "id":"1",
+        "name": "Petar",
+        "surname":"Petrovic",
+        "Email":"njegos@mne.com",
+        "jmbg":"1234567890",
+        "note":"I'd like to see Big Ben and meet english queen and Chris Martin. Maybe watch United game at Old Traford. Would be nice."
+    },
+    {
+        "id":"2",
+        "name": "Nikola",
+        "surname":"Nikolic",
+        "Email":"nini@yahoo.com",
+        "jmbg":"0987654321",
+        "note":"I wish i can dive into dirty water of Venice, visit San Marco cathedral and eat pizza at Luigi's pizzeria."
+    },
+    {
+        "id":"3",
+        "name": "Jovan",
+        "surname":"Jovanovic",
+        "Email":"jojo@gmail.com",
+        "jmbg":"0246897531",
+        "note":"I'd like to watch Tour de France, try best french vines and cheese."
+    }
+]
+}
