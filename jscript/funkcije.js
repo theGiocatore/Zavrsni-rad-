@@ -37,6 +37,7 @@ $("#dugmeKom").on("click", function(){
     var postTxt = $("#tArea").val();
     $("#listaKom").append("<li>"+ postTxt + "</li>");
     $("#tArea").val('');
+    return false;
 });
 });
 $(function(){                       /*read more/less dugme*/
@@ -68,4 +69,26 @@ $(function(){
        var slicica = $(this).attr("src");
        window.open(slicica);
     });
+});
+
+var ucitaj = $.ajax({               /*'dovlacimo' podatke sa ponudom za putovanja sa servera u tabelu*/
+    type: "GET",
+    url:"http://localhost:3000/destinations"
+});
+ucitaj.done(function(podatak){
+    $.each(podatak,function(i, pod){
+    $("tbody").append('<tr><td>' + pod.destination + '</td><td>' + pod.date + '</td><td>' + pod.duration + '</td><td>' + pod.price + '</td><td><button id="' + pod.id + '"class=btn btn-primary">View details</button></td><td><button id="' + pod.id + '"class=btn btn-secondary">Make reservation</button></td></tr>');
+    });
+
+    $('#bookTable').DataTable();
+} );
+
+$(document).on("click", "button", function(){
+    if($(this).hasClass("btn-secondary")){
+        alert("1");
+    }else if($(this).hasClass("btn-primary")){
+        alert("2");
+    }else{
+        alert("3");
+    }
 });
