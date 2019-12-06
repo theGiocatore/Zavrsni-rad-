@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <script src="node_modules/popper.js/dist/popper.js"></script>
+    <script src="jquery.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="jscript/funkcije.js"></script>
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css" rel="stylesheet">
+    <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Booking</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar nav-tabs navbar-expand-sm navbar-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <a class="navbar-brand" href="">
+                    <img src="slike/logo.jpg" alt="logo" style="width: 100px;">
+                </a>
+                <ul class="navbar-nav justify-content-end navigacija">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="destinations.html">Destinations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="booking.html">Booking</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="galerija.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="kontakt.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="container-fluid" style="margin-bottom: 10px;">
+        <img src="slike/airplane.jpg" width="100%" height="300" style="object-fit: cover;">
+    </div>
+
+    <table id="bookTable2">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Surname</th>
+                    <th>Email</th>
+                    <th>Destination</th>
+                    <th>Price</th>
+                    <th>Note</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- popunjava se dinamicki -->
+            </tbody>
+        </table><br>
+</body>
+
+</html>

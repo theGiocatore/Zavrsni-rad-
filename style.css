@@ -182,3 +182,11 @@ footer{
 .slk{
     cursor: pointer;
 }
+#bjeloDugme{
+    width: 250px; 
+    color: white;
+    background-color:#f2a463 ; 
+    float: right;
+    border-radius: 10px;
+    margin-right: 5%;
+}

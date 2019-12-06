@@ -27,7 +27,6 @@ function brojBedzeva(){                                            /* funk. broj
 document.addEventListener("DOMContentLoaded", function() {
     brojBedzeva();
   });
-
 function subscribe(){                                       /*alert posle pritiska na "subscribe" dugme*/
     var txt = document.getElementById('subs').value;
     alert("Thank you for subscribing! Our new blog posts will wait for you on: " + txt);
@@ -55,8 +54,7 @@ $(function(){                   /*pritiskom na dugme'read more' otvara se post, 
         var prvi = $('#zamena1');
         var drugi = $('#zamena2');
         prvi.replaceWith(drugi);
-        $('#zamena2').css("display","initial");
-        
+        $('#zamena2').css("display","initial");     
     });
 });
 $(function(){
@@ -70,25 +68,34 @@ $(function(){
        window.open(slicica);
     });
 });
-
 var ucitaj = $.ajax({               /*'dovlacimo' podatke sa ponudom za putovanja sa servera u tabelu*/
     type: "GET",
     url:"http://localhost:3000/destinations"
 });
 ucitaj.done(function(podatak){
     $.each(podatak,function(i, pod){
-    $("tbody").append('<tr><td>' + pod.destination + '</td><td>' + pod.date + '</td><td>' + pod.duration + '</td><td>' + pod.price + '</td><td><button id="' + pod.id + '"class=btn btn-primary">View details</button></td><td><button id="' + pod.id + '"class=btn btn-secondary">Make reservation</button></td></tr>');
+    $("#bookTable tbody").append('<tr><td>' + pod.destination + '</td><td>' + pod.date + '</td><td>' + pod.duration + '</td><td>' + pod.price + '</td><td><button id="' + pod.id + '"class=btn btn-primary">View details</button></td><td><button id="' + pod.id + '"class=btn btn-secondary">Make reservation</button></td></tr>');
     });
-
     $('#bookTable').DataTable();
 } );
+// $(document).on("click", "button", function(){
+//     if($(this).hasClass("btn-secondary")){
+//         alert("1");
+//     }else if($(this).hasClass("btn-primary")){
+//         alert("2");
+//     }else{
+//         alert("3");
+//     }
+// });
 
-$(document).on("click", "button", function(){
-    if($(this).hasClass("btn-secondary")){
-        alert("1");
-    }else if($(this).hasClass("btn-primary")){
-        alert("2");
-    }else{
-        alert("3");
-    }
+var ucitaj2 = $.ajax({
+    type: "GET",
+    url: "http://localhost:3000/reservations"
 });
+ucitaj2.done(function (podatak2) {
+    $.each(podatak2, function (i, pod1) {
+    $("#bookTable2 tbody").append('<tr><td>' + pod1.name + '</td><td>' + pod1.surname + '</td><td>' + pod1.Email + '</td><td>' + pod1.jmbg + '</td><td>' + pod1.note + '</td><td><button id="' + pod1.id + '"class=btn btn-success">Change<br> reservation</button></td><td><button id="' + pod1.id + '"class=btn btn-warning">Delete <br> reservation</button></td></tr>');
+    });
+    $('#bookTable2').DataTable();
+});
+

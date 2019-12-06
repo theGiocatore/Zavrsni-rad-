@@ -11,7 +11,7 @@
     <link href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css" rel="stylesheet">
     <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Blog</title>
+    <title>Booking</title>
     <link href="style.css" rel="stylesheet">
 </head>
 
@@ -67,8 +67,66 @@
         </tr>
     </thead>
     <tbody>
+        <!-- popunjavamo dinamicki -->
     </tbody>
-</table>
+</table><br>
+<button type="button" id="bjeloDugme"><a href="booking1.html" style="text-decoration: none; color: white;">View reservations</a></button><br><br>
+<div class="container">
+    <div class="modal" id="myModal2">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">London</h4>
+          </div>
+          <div class="modal-body">
+            <img src="slike/london.jpg" width="480px" >
+            <p>Let us take you on an unforgettable journey of discovery in to Britain's rich cultural and 
+                historical heritage on a full or half-day tour. Experience local culture firsthand and explore Britain in an immersive and more intimate way, 
+                or book tickets for London's world-famous attractions with Britain's Finest UK Sightseeing.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          </div>   
+        </div>
+      </div>
+    </div>  
+</div>
+
+<div class="modal" id="myModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header text-center">
+                <h4>Make reservation</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="md-form">
+                    <label data-error="wrong" data-success="right">Name:</label><br>
+                    <input type="text" id="ime" class="" style="width: 100%;">
+                </div>
+                <div>
+                    <label data-error="wrong" data-success="right">Surame:</label><br>
+                    <input type="text" id="prezime" class="" style="width: 100%;">
+                </div>
+                <div class="md-form">
+                    <label data-error="wrong" data-success="right">Email:</label><br>
+                    <input type="email" id="email" class="" style="width: 100%;">
+                </div>
+                <div class="md-form">
+                    <label data-error="wrong" data-success="right">JMBG:</label><br>
+                    <input type="number" id="jmbg" class="" style="width: 100%;">
+                </div>
+                <div>
+                    <label>Note:</label><br>
+                    <textarea style="width: 100%; margin: 0%;"  id="note" rows="3"></textarea>
+                </div><br>
+                <div>
+                    <button class="btn btn-primary float-right">Send<button>
+                </div>
+        </div>
+    </div>
+</div>
+</div>
 
 </body>
 </html>
