@@ -17,7 +17,7 @@ function ucitajSliku() {                                                 /*za do
         }
 }   
 function brojBedzeva(){                                            /* funk. broji postove odredjenih klasa i stavlja ih u BLOG/CATEGORIES/badges */
-    var destinacije = document.getElementsByClassName("dest").length;
+   var destinacije = document.getElementsByClassName("dest").length;
     var saveti = document.getElementsByClassName("tTips").length;
     var letovanja = document.getElementsByClassName("summerTime").length;
     document.getElementById("drugiBadge").innerHTML = destinacije;
@@ -74,7 +74,13 @@ var ucitaj = $.ajax({               /*'dovlacimo' podatke sa ponudom za putovanj
 });
 ucitaj.done(function(podatak){
     $.each(podatak,function(i, pod){
-    $("#bookTable tbody").append('<tr><td>' + pod.destination + '</td><td>' + pod.date + '</td><td>' + pod.duration + '</td><td>' + pod.price + '</td><td><button id="' + pod.id + '"class=btn btn-primary pogledaj">View details</button></td><td><button id="' + pod.id + '"class=btn btn-secondary rezervisi">Make reservation</button></td></tr>');
+    $("tbody").append('<tr><td>' + pod.destination 
+                                + '</td><td>' + pod.date 
+                                + '</td><td>' + pod.duration 
+                                + '</td><td>' + pod.price 
+                                + '</td><td><button id="' 
+                                + pod.id + '"class=btn btn-primary pogledaj" data-toggle="modal" data-backdrop="static" data-target="#myModal2">View details</button></td><td><button id="' 
+                                + pod.id + '"class=btn btn-secondary rezervisi" data-toggle="modal" data-backdrop="static" data-target="#myModal">Make reservation</button></td></tr>');
     });
     $('#bookTable').DataTable();
 } );
