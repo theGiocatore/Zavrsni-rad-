@@ -62,7 +62,7 @@ $(function(){
             window.location.reload();
         });      
 });
-$(function(){
+$(function(){                           /*klikom na sliku iz galerije, otvaramo je u novom prozoru*/
     $(".slk").on("click",function(){
        var slicica = $(this).attr("src");
        window.open(slicica);
@@ -74,13 +74,14 @@ var ucitaj = $.ajax({               /*'dovlacimo' podatke sa ponudom za putovanj
 });
 ucitaj.done(function(podatak){
     $.each(podatak,function(i, pod){
-    $("tbody").append('<tr><td>' + pod.destination 
+    $("#bookTable tbody").append('<tr><td>' + pod.destination 
                                 + '</td><td>' + pod.date 
                                 + '</td><td>' + pod.duration 
                                 + '</td><td>' + pod.price 
-                                + '</td><td><button id="' 
-                                + pod.id + '"class=btn btn-primary pogledaj" data-toggle="modal" data-backdrop="static" data-target="#myModal2">View details</button></td><td><button id="' 
-                                + pod.id + '"class=btn btn-secondary rezervisi" data-toggle="modal" data-backdrop="static" data-target="#myModal">Make reservation</button></td></tr>');
+                                + '</td><td><button id="'+ pod.id 
+                                + '"class=pogledaj btn btn-primary " data-toggle="modal" data-backdrop="static" data-target="#myModal'+ pod.id +'"'+'>View details</button>'
+                                + '</td><td><button id="' + pod.id 
+                                + '"class=rezervisi btn btn-secondary " data-toggle="modal" data-backdrop="static" data-target="#myModal">Make reservation</button></td></tr>');
     });
     $('#bookTable').DataTable();
 } );
@@ -89,9 +90,55 @@ var ucitaj2 = $.ajax({
     type: "GET",
     url: "http://localhost:3000/reservations"
 });
+// var ucitaj3 = $.extend(ucitaj, ucitaj2);
+// console.log(ucitaj3);
 ucitaj2.done(function (podatak2) {
     $.each(podatak2, function (i, pod1) {
-    $("#bookTable2 tbody").append('<tr><td>' + pod1.name + '</td><td>' + pod1.surname + '</td><td>' + pod1.Email +'</td><td>'+ 'xxx' + '</td><td>'+ 'xxx' +  '</td><td>' + pod1.note + '</td><td><button id="' + pod1.id + '"class=btn btn-success">Change<br> reservation</button></td><td><button id="' + pod1.id + '"class=btn btn-warning">Delete <br> reservation</button></td></tr>');
+    $("#bookTable2 tbody").append('<tr><td>' + pod1.name
+                                             +'</td><td>' + pod1.surname 
+                                             +'</td><td>' + pod1.Email 
+                                             +'</td><td>'+ 'xxx' 
+                                             +'</td><td>'+'xxx' 
+                                             +'</td><td>' + pod1.note 
+                                             +'</td><td><button id="'+ pod1.id 
+                                             +'"class=izmeni btn btn-success">Change<br>reservation</button>'
+                                             +'</td><td><button id="'+ pod1.id 
+                                             +'"class=obrisiMe btn btn-warning">Delete<br>reservation</button></td></tr>');
     });
     $('#bookTable2').DataTable();
 });
+// $("bookTable2 tbody").on("click","button", function(){
+//     if($(this).hasClass("obrisiMe")){
+//         $ajax({
+//             url:'"http://localhost:3000/reservations/' + $(this).attr("id") + '"',
+//             type:'DELETE',
+//             dataType:'json',
+//             success: function(){
+//                 console.log("obrisano");
+//             },
+//             error: alert("nije uspelo")  
+//         });
+//         $(this).parent().parent().remove();
+//     }
+// })
+function dodajRez(){
+    let rezerv = {
+        name: document.getElementById("nameZ").value,
+        surname : document.getElementById("lastNameZ").value,
+        Email : document.getElementById("mailZ").value,
+        jmbg: document.getElementById("jbg").value,
+        note: document.getElementById("noteZ").value
+    };
+    var zahtevZS = $.ajax({
+        type: 'POST',
+        url: "http://localhost:3000/reservations",
+        data: rezerv
+    });
+    zahtevZS.done(function(podaci){
+        $("#proba4").text(JSON.stringify(podaci));
+    });
+    zahtevZS.fail(function(podaci){
+        alert(podaci.statusText);
+    });
+}
+

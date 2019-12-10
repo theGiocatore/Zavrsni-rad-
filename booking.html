@@ -72,7 +72,7 @@
 </table><br>
 <button type="button" id="bjeloDugme"><a href="booking1.html" style="text-decoration: none; color: white;">View reservations</a></button><br><br>
 <div class="container">
-    <div class="modal" id="myModal2">
+    <div class="modal" id="myModal1">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
@@ -101,31 +101,118 @@
             </div>
             <div class="modal-body">
                 <div class="md-form">
-                    <label data-error="wrong" data-success="right">Name:</label><br>
+                    <label for="nameZ">Name:</label><br>
                     <input type="text" id="ime" class="" style="width: 100%;">
                 </div>
                 <div>
-                    <label data-error="wrong" data-success="right">Surame:</label><br>
+                    <label for="lastNameZ">Surame:</label><br>
                     <input type="text" id="prezime" class="" style="width: 100%;">
                 </div>
                 <div class="md-form">
-                    <label data-error="wrong" data-success="right">Email:</label><br>
+                    <label for="mailZ">Email:</label><br>
                     <input type="email" id="email" class="" style="width: 100%;">
                 </div>
                 <div class="md-form">
-                    <label data-error="wrong" data-success="right">JMBG:</label><br>
+                    <label for="jbg">JMBG:</label><br>
                     <input type="number" id="jmbg" class="" style="width: 100%;">
                 </div>
                 <div>
-                    <label>Note:</label><br>
+                    <label for="noteZ">Note:</label><br>
                     <textarea style="width: 100%; margin: 0%;"  id="note" rows="3"></textarea>
-                </div><br>
+                </div>
                 <div>
-                    <button class="btn btn-primary float-right">Send<button>
+                    <button onclick="dodajRez()" class="btn btn-primary float-right">Send<button>
                 </div>
         </div>
     </div>
 </div>
+</div>
+<p id="proba4"></p>
+                                            <!--modali za preostale destinacije koji se otvaraju u delu 'booking'.-->
+<div class="container">
+    <div class="modal" id="myModal2">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">New York</h4>
+          </div>
+          <div class="modal-body">
+            <h3>Neka slika i neki tekst o Njujorku.</h3>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          </div>   
+        </div>
+      </div>
+    </div>  
+</div>
+<div class="container">
+    <div class="modal" id="myModal3">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Paris</h4>
+          </div>
+          <div class="modal-body">
+            <h3>Neka slika i neki tekst o Parizu.</h3>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          </div>   
+        </div>
+      </div>
+    </div>  
+</div>
+<div class="container">
+    <div class="modal" id="myModal4">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Rome</h4>
+          </div>
+          <div class="modal-body">
+            <h3>Neka slika i neki tekst o Rimu.</h3>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          </div>   
+        </div>
+      </div>
+    </div>  
+</div>
+<div class="container">
+    <div class="modal" id="myModal5">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Thailand</h4>
+          </div>
+          <div class="modal-body">
+            <h3>Neka slika i neki tekst o Tajlandu.</h3>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          </div>   
+        </div>
+      </div>
+    </div>  
+</div>
+<div class="container">
+    <div class="modal" id="myModal6">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Venice</h4>
+          </div>
+          <div class="modal-body">
+            <h3>Neka slika i neki tekst o Veneciji.</h3>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          </div>   
+        </div>
+      </div>
+    </div>  
 </div>
 
 </body>
