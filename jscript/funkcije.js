@@ -97,8 +97,8 @@ ucitaj2.done(function (podatak2) {
     $("#bookTable2 tbody").append('<tr><td>' + pod1.name
                                              +'</td><td>' + pod1.surname 
                                              +'</td><td>' + pod1.Email 
-                                             +'</td><td>'+ 'xxx' 
-                                             +'</td><td>'+'xxx' 
+                                             +'</td><td>'+ 'destinacija' 
+                                             +'</td><td>'+'cena' 
                                              +'</td><td>' + pod1.note 
                                              +'</td><td><button id="'+ pod1.id 
                                              +'"class=izmeni btn btn-success">Change<br>reservation</button>'
@@ -121,24 +121,24 @@ ucitaj2.done(function (podatak2) {
 //         $(this).parent().parent().remove();
 //     }
 // })
-function dodajRez(){
-    let rezerv = {
-        name: document.getElementById("nameZ").value,
-        surname : document.getElementById("lastNameZ").value,
-        Email : document.getElementById("mailZ").value,
-        jmbg: document.getElementById("jbg").value,
-        note: document.getElementById("noteZ").value
-    };
-    var zahtevZS = $.ajax({
-        type: 'POST',
-        url: "http://localhost:3000/reservations",
-        data: rezerv
-    });
-    zahtevZS.done(function(podaci){
-        $("#proba4").text(JSON.stringify(podaci));
-    });
-    zahtevZS.fail(function(podaci){
-        alert(podaci.statusText);
-    });
-}
+// function dodajRez(){
+//     let rezerv = {
+//         name: document.getElementById("nameZ").value,
+//         surname : document.getElementById("lastNameZ").value,
+//         Email : document.getElementById("mailZ").value,
+//         jmbg: document.getElementById("jbg").value,
+//         note: document.getElementById("noteZ").value
+//     };
+//     var zahtevZS = $.ajax({
+//         type: 'POST',
+//         url: "http://localhost:3000/reservations",
+//         data: rezerv
+//     });
+//     zahtevZS.done(function(podaci){
+//         $("#proba4").text(JSON.stringify(podaci));
+//     });
+//     zahtevZS.fail(function(podaci){
+//         alert(podaci.statusText);
+//     });
+// }
 
