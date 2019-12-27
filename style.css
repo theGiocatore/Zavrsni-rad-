@@ -21,6 +21,8 @@ h1{                                             /*naslovi na home page-u*/
 .divovi{                                        /*sadrzaj koji zauzima centralni deo stranice,a sa strane su praznine*/
     margin-left: 20%;
     margin-right: 20%;
+    justify-content: center;
+    text-align: center;
 }
 .hr1{                                             /*razlika izmedju hr1 i hr2 je u duzini linije. hr2 zahvata 60% po sredini strane */
     border-color:#f2a463;
@@ -51,24 +53,27 @@ h1{                                             /*naslovi na home page-u*/
 }
 .venecija{                                      /*venecija,pariz i rim -divovi sa pozadinskim slikama i tesktom,modifikovani prema zahtevu*/
     background-image:url(slike/venice.jpg);
-    background-size: 100% 100%;
+    background-size: 99% 99%;
     background-repeat: no-repeat;
     padding-top: 100px;
     padding-bottom: 150px;
+    width: 95%;
 }
 .pariz{
     background-image: url(slike/Paris.jpg);
-    background-size: 100% 100%;
+    background-size: 99% 99%;
     background-repeat: no-repeat;
     padding-top: 100px;
     padding-bottom: 150px;
+    width: 95%;
 }
 .rim{
     background-image: url(slike/rome.jpg);
-    background-size: 100% 100%;
+    background-size: 99% 99%;
     background-repeat: no-repeat;
     padding-top: 100px;
     padding-bottom: 150px;
+    width: 95%;
 }
 footer{
     width: 100%;
